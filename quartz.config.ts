@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Guide",
+    pageTitle: "MonoMotion Docs",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
