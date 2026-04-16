@@ -1,7 +1,6 @@
 ---
-title: "Vault Home"
+title: VESC Onewheel Documentation
 aliases:
-  - "Vault Home"
 tags:
   - index
   - hub
@@ -17,13 +16,13 @@ This vault covers the Refloat self-balancing controller package and the BLDC fir
 
 ## The Two Codebases
 
-| | [[system-overview|Refloat]] | [[system-overview|BLDC]] |
-|---|------------|------|
-| **Role** | Balance controller | Motor firmware |
-| **Language** | C (VESC package) | C (STM32 firmware) |
-| **Runs on** | Inside bldc as a plugin | STM32F4 microcontroller |
+|               | Refloat                              | BLDC                               |
+| ------------- | ------------------------------------ | ---------------------------------- |
+| **Role**      | Balance controller                   | Motor firmware                     |
+| **Language**  | C (VESC package)                     | C (STM32 firmware)                 |
+| **Runs on**   | Inside bldc as a plugin              | STM32F4 microcontroller            |
 | **Key files** | `src/main.c`, `src/conf/datatypes.h` | `motor/mcpwm_foc.c`, `datatypes.h` |
-| **Repo** | `refloat/` | `bldc/` |
+| **Repo**      | `refloat/`                           | `bldc/`                            |
 
 They communicate through the [[refloat-bldc-interface|Refloat–BLDC Interface]] (`vesc_c_if` function pointer table).
 
